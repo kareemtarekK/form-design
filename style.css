@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* in medium screen */
+@media(min-width:768px){
+    .container{
+        width: 750px;
+    }
+}
+/* in large screen */
+@media(min-width:999px){
+    .container{
+        width: 970px;
+    }
+}
+/* in very large screen */
+@media(min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+.page{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-image: url("images/download.jpg");
+    background-size: cover;
+    min-height: 100vh;
+}
+.page .container{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+    padding: 50px;
+}
+.page .container .text-content{
+    color: white;
+}
+.page .container .text-content h3{
+    font-size: 35px;
+    font-weight: bold;
+    width: 270px;
+    padding-bottom: 25px;
+}
+.page .container .text-content p{
+    font-size: 15px;
+    line-height: 1.3rem;
+}
+.form-content{
+    position: relative;
+}
+.form-content .trySpan{
+    width: 100%;
+    background-color: darkslateblue;
+    display: block;
+    padding: 10px 0px;
+    color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.form-content .trySpan p{
+    display: inline-block;
+    color: #cfcfcf;
+}
+.form-content .form{
+    background-color: white;
+    padding: 20px;
+   
+}
+.form-content .form input{
+    padding: 10px 15px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1.5px solid #777;
+    border-radius: 5px;
+}
+.form-content .form input:focus{
+    outline: none;
+}
+.form-content .form input[type="submit"]{
+    background-color: green;
+    color: white;
+    border: none;
+}
+.form-content .form p{
+    width: 100%;
+    color: rgb(148, 148, 148);
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.form-content .form p span{
+    color: rgb(184, 60, 60);
+}
+
+@media(max-width:767px){
+    .page .container{
+        flex-direction: column;
+    }
+}
+form{
+    position: relative;
+}
+form .fname,
+form .lname,
+form .email,
+form .password{
+    position: absolute;
+    width: calc(100% - 40px);
+    background-color: orange;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+.form-content .layout{
+    display: block;
+    background-color: green;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 0 15px 0;
+    border-radius: 5px;
+    display: none;
+}
